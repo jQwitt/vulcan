@@ -1,6 +1,7 @@
 import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import BaseCard from "@repo/ui/cards/base-card";
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
@@ -37,6 +38,7 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
+        <BaseCard title="tester" href={""}>children</BaseCard>
 
         <div className={styles.ctas}>
           <a
